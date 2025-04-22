@@ -65,20 +65,20 @@ Adquirir y preparar los recursos necesarios para resolver los trabajos del curso
 
 ### B) La versión de este compilador es:
 
-- **Versión**: `gcc (MinGW.org GCC-6.3.0-1) 6.3.0`  
+- **Versión**: `gcc.exe (Rev2, Built by MSYS2 project) 14.2.0`  
 
 Pude obtener la versión del compilador aplicando el siguiente comando en la consola:
 
 ```bash
 gcc --version
-cc.exe (MinGW.org GCC-6.3.0-1) 6.3.0
-Copyright (C) 2016 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions. There is NO
+gcc.exe (Rev2, Built by MSYS2 project) 14.2.0
+Copyright (C) 2024 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO 
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
 ## C) 💻 Versión del estándar de C que el compilador compila
-Versión del lenguaje estándar: C11 (también llamada C1X)
+Versión del lenguaje estándar: C17 aunque puedo forzarlo a c2x
 
 Obtuve esta información al compilar y ejecutar el siguiente código:
  
@@ -98,18 +98,19 @@ int main(void) {
 Compilación:
 
 ```bash
-gcc version.c -o version
+gcc version.c -o version.exe
 ```
 (Este comando crea un ejecutable llamado version.exe)
 Ejecución:
 
 ```bash
-./version
+./version.exe
 ```
 Resultado obtenido:
 
 ```yaml
-STDC version: 201112
+STDC version: 201710
 ```
-Los primeros cuatro dígitos (2011) indican el año del estándar del lenguaje C que está utilizando el compilador.
+Los primeros cuatro dígitos (2017) indican el año del estándar del lenguaje C que está utilizando el compilador.
+Actualice la versión del compilador de c11 a c17 (con posibilidad de forzarlo a c2x)
 
